@@ -1,0 +1,100 @@
+body {
+  background: #002244; /* Dark blue background */
+  color: #ffffff; /* White text for readability */
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.about-us-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #002244; /* Same dark blue background */
+  color: #ffffff; /* White text color for contrast */
+  position: relative;
+  animation: fadeIn 1.5s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  border-radius: 10px; /* Rounded corners */
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.about-us-container h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #ecf0f1; /* Lighter color for better contrast */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  animation: slideInFromTop 1s ease-in-out;
+}
+
+@keyframes slideInFromTop {
+  from {
+      transform: translateY(-100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+.about-us-container h2 {
+  font-size: 1.8em;
+  margin-top: 30px;
+  color: #2980b9;
+  transition: color 0.3s ease;
+}
+
+.about-us-container h2:hover {
+  color: #1f6391;
+}
+
+.about-us-container p {
+  margin: 10px 0;
+  transition: transform 0.3s ease;
+  background: rgba(173, 216, 230, 0.9); /* Light blue background */
+  padding: 10px;
+  border-radius: 5px;
+  text-align: left;
+  
+}
+
+.about-us-container p:hover {
+  transform: scale(1.05);
+}
+
+.about-us-container a {
+  color: #2980b9;
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.about-us-container a:hover {
+  color: #1f6391;
+  text-decoration: underline;
+}
+
+.contact-info, .map, .social-media {
+  background: rgba(173, 216, 230, 0.9); /* Light blue background */
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.contact-info h3, .map h3, .social-media h3 {
+  color: #333; /* Dark color for headings in divs */
+}
+
+.contact-info p, .social-media p {
+  color: #333; /* Dark color for paragraphs in divs */
+}

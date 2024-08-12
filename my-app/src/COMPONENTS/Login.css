@@ -1,0 +1,95 @@
+/* src/Login.css */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #e0e1e1a0;
+}
+
+.login-image {
+  width: 80%;
+  transition: all 0.5s ease; /* Adjusted transition duration */
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  align-items: center;
+  background: url('../Assets/login\ image\ 2.jpeg') no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+form {
+  background: rgb(240, 237, 237);
+  padding: 30px; /* Increased padding */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 350px; /* Increased width */
+  margin: 10%;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px; /* Increased margin */
+  color: #333333;
+}
+
+.input-group {
+  margin-bottom: 15px; /* Increased margin */
+}
+
+label {
+  display: block;
+  margin-bottom: 10px; /* Increased margin */
+  color: #555555;
+}
+
+input {
+  width: 100%;
+  padding: 10px; /* Increased padding */
+  border: 1px solid #beecf6;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 10px; /* Increased padding */
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 16px; /* Increased font size */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+p {
+  text-align: center;
+  margin-top: 15px; /* Increased margin */
+  color: #555555;
+}
+
+p a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+.error {
+  color: #ff0000;
+  font-size: 14px;
+  margin-top: 5px;
+}

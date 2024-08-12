@@ -1,0 +1,89 @@
+.dashboard {
+  font-family: 'Montserrat', sans-serif;
+  padding: 20px;
+  text-align: center;
+  background-color: inherit; /* Ensures it matches other pages */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white; /* Ensure text is visible on the background */
+}
+
+.dashboard h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: white; /* White text color */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a shadow for better contrast */
+}
+
+.dashboard p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: white; /* White text color */
+}
+
+.dashboard-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.dashboard-link {
+  display: block;
+  margin: 15px 0;
+  padding: 15px 30px;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  background-color: #007bff;
+  border-radius: 30px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.dashboard-link:hover {
+  background-color: #0056b3;
+  transform: translateY(-5px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-link:active {
+  background-color: #004494;
+  transform: translateY(0);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-overview {
+  margin-top: 40px;
+  max-width: 800px;
+  text-align: left;
+}
+
+.dashboard-overview h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.dashboard-overview p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .dashboard-nav {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .dashboard-link {
+    margin: 10px 20px;
+  }
+}

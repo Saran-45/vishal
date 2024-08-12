@@ -1,0 +1,79 @@
+.inventoryDetails {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: 'Arial, sans-serif';
+  background-color: #f4f4f4;
+  border-radius: 8px;
+}
+
+.inventoryDetails h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 2rem;
+}
+
+.inventoryTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.inventoryTable th, .inventoryTable td {
+  padding: 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.inventoryTable th {
+  background-color: #2196F3; /* Bright blue background for headers */
+  color: #ffffff; /* White text for header */
+  font-weight: bold;
+}
+
+.inventoryTable tr:nth-child(even) {
+  background-color: #f0f0f0; /* Light gray for even rows */
+}
+
+.inventoryTable tr:hover {
+  background-color: #e1f5fe; /* Light blue background on hover */
+}
+
+.inventoryTable td {
+  color: #000000; /* Bright black text for table data */
+}
+
+.inventoryTable td.product-name {
+  color: #333333; /* Slightly lighter but still prominent color for product names */
+  font-weight: bold;
+}
+
+.inventoryTable td.quantity {
+  color: #ff5722; /* Bright color for quantities, e.g., a vibrant orange */
+  font-weight: bold;
+}
+
+.inventoryTable .no-data {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+  padding: 15px;
+}
+
+/* Additional styles for better contrast */
+.inventoryTable th {
+  background-color: #007bb5; /* Darker blue for headers */
+}
+
+.inventoryTable tr:nth-child(odd) td.product-name {
+  background-color: #ffffff; /* White background for odd rows */
+}
+
+.inventoryTable tr:nth-child(even) td.product-name {
+  background-color: #f0f0f0; /* Light gray background for even rows */
+}

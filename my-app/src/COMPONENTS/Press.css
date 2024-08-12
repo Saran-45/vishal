@@ -1,0 +1,51 @@
+/* Press.css */
+
+.press-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f2f5;
+    min-height: 100vh;
+  }
+  
+  .press-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .press-header h1 {
+    font-size: 36px;
+    color: #002244; /* Dark blue color from Home.css */
+  }
+  
+  .press-content {
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .press-release {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .release-title {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 10px;
+  }
+  
+  .release-date {
+    font-size: 14px;
+    color: #777777;
+    margin-bottom: 20px;
+  }
+  
+  .release-content p {
+    font-size: 16px;
+    color: #555555;
+    line-height: 1.6;
+  }

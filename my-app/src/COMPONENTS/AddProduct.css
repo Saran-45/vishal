@@ -1,0 +1,97 @@
+.addProductForm {
+    margin-top: 50px;
+    padding: 30px;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #f4f4f9; /* Light grey background for better contrast */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.addProductForm h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #ffffff; /* White text color */
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); /* Adds shadow for better readability */
+}
+
+.addProductForm p {
+    color: #ffffff; /* White text color */
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); /* Adds shadow for better readability */
+}
+
+.formGroup {
+    margin-bottom: 20px;
+}
+
+.formGroup label {
+    display: block;
+    font-weight: 700;
+    color: #ffffff; /* White text color */
+    margin-bottom: 8px;
+}
+
+.formGroup input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.formGroup input:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50; /* Green */
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #388e3c; /* Darker green on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(56, 142, 60, 0.2);
+}
+
+button:active {
+    background-color: #2e7d32; /* Even darker green on click */
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(46, 125, 50, 0.2);
+}
+
+@media (max-width: 600px) {
+    .addProductForm {
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .addProductForm h2 {
+        font-size: 24px;
+    }
+
+    .formGroup input {
+        padding: 10px;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,81 @@
+{
+  "UserData": [
+    {
+      "id": "1",
+      "uname": "VIshAL",
+      "email": "viashal@gmail.com",
+      "password": "Vishal@123",
+      "Role": "Admin"
+    },
+    {
+      "id": "2",
+      "uname": "yogesh",
+      "email": "yogesh@gmail.com",
+      "password": "yogi@1234",
+      "Role": "User"
+    },
+    {
+      "id": "3",
+      "uname": "Kumar",
+      "email": "Kumar@gmail.com",
+      "password": "Kumar@1234",
+      "Role": "User"
+    },
+    {
+      "id": "4",
+      "uname": "viki",
+      "email": "viki@gmail.com",
+      "password": "viki@1234",
+      "Role": "User"
+    },
+    {
+      "id": "5",
+      "uname": "vicki",
+      "email": "vicki@gmail.com",
+      "password": "vicki@1234",
+      "Role": "User"
+    }
+  ],
+  "Inventory": [
+    {
+      "id": "2",
+      "pname": "Dishwasher",
+      "Quantity": 200
+    },
+    {
+      "id": "3",
+      "pname": "Washing Machine",
+      "Quantity": 270
+    },
+    {
+      "id": "4",
+      "pname": "Hair Dryer",
+      "Quantity": 500
+    },
+    {
+      "id": "5",
+      "pname": "Microwave Oven",
+      "Quantity": 300
+    },
+    {
+      "id": "6",
+      "pname": "Kettle",
+      "Quantity": 100
+    },
+    {
+      "id": "7",
+      "pname": "water heater",
+      "Quantity": 700
+    },
+    {
+      "id": "8",
+      "pname": "Air conditioner",
+      "Quantity": 500
+    },
+    {
+      "id": "d17b9086-fe16-405c-a773-290b44d656de",
+      "pname": "Air Cooler",
+      "Quantity": 150
+    }
+  ]
+}

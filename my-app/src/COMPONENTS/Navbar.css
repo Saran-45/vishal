@@ -1,0 +1,146 @@
+/* src/Navbar.css */
+.navbar {
+  background: linear-gradient(90deg, #333 0%, #555 100%);
+  padding: 15px 30px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar:hover {
+  background: linear-gradient(90deg, #444 0%, #666 100%);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  margin-right: 15px; /* Move menu slightly to the left */
+}
+
+.navbar-menu li {
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+  padding: 5px 0;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-menu a::after {
+  content: '';
+  display: block;
+  height: 2px;
+  background: #ffd700;
+  width: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-menu a:hover {
+  color: #ffd700;
+  transform: scale(1.05);
+}
+
+.navbar-menu a:hover::after {
+  width: 100%;
+  transform: scaleX(1);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 60px;
+    right: 0;
+    background: #333;
+    width: 100%;
+    height: calc(100vh - 60px);
+    display: none;
+    overflow: auto;
+    transition: transform 0.3s ease;
+    transform: translateX(100%);
+  }
+
+  .navbar-menu.active {
+    display: flex;
+    transform: translateX(0);
+  }
+
+  .navbar-menu li {
+    margin: 15px 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .navbar-menu li:nth-child(even) {
+    opacity: 0.8;
+  }
+
+  .navbar-menu li:nth-child(odd) {
+    opacity: 1;
+  }
+
+  .navbar-menu a {
+    font-size: 20px;
+    padding: 15px;
+  }
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.hamburger-menu:hover {
+  color: #ffd700;
+}
+
+.hamburger-menu.active {
+  display: block;
+}
+
+.hamburger-menu div {
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 5px 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburger-menu.active div:nth-child(1) {
+  transform: rotate(45deg);
+  margin-top: 10px;
+}
+
+.hamburger-menu.active div:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-menu.active div:nth-child(3) {
+  transform: rotate(-45deg);
+  margin-top: -10px;
+}
